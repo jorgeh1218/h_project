@@ -1,0 +1,23 @@
+{"records":[{
+	"Fecha": "02/10/2016",
+	"FechaVto": "10/11/2016",
+	"TipoC": "Factura A",
+	"Prefijo": 14,
+	"NroComp": 10305,
+	"SucCliente": 1635,
+	"Debe": 1000,
+	"Haber": 0,
+	"SaldoComp": 17365.62,
+	"SaldoCtaCte": 17365.62
+}, {
+	"Fecha": "31/10/2016",
+	"FechaVto": "05/11/2016",
+	"TipoC": "Factura B",
+	"Prefijo": 14,
+	"NroComp": 10304,
+	"SucCliente": 1635,
+	"Debe": 16365.62,
+	"Haber": 0,
+	"SaldoComp": 16365.62,
+	"SaldoCtaCte": 16365.62
+}]}

@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleConfirm">
+		<sortItems>
+			<ViewSettingsItem text="Tipo Comp." key="TipoC" selected="true"/>
+			<ViewSettingsItem text="Fecha" key="Fecha"/>
+			<ViewSettingsItem text="Fecha Vto." key="FechaVto"/>
+		</sortItems>
+		<filterItems>
+			<ViewSettingsFilterItem
+				text="Factura"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Factura A" key="TipoC_EQ_Factura A_"/>
+					<ViewSettingsItem text="Factura B" key="TipoC_EQ_Factura B_" />
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem
+				text="Fecha"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Últimos 5 días" />
+					<ViewSettingsItem text="Últimos 15 días" />
+					<ViewSettingsItem text="Último mes"  />
+					<ViewSettingsItem text="Últimos tres meses" />
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

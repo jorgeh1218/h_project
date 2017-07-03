@@ -1,0 +1,86 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="HELACOR_Project.controller.View1">
+	<App>
+		<pages>
+			<Page title="Consulta de Cuenta">
+				<content>
+					<ObjectHeader title="Sucursal: 2-16" intro="Legajo: 2" iconActive="false" id="__header0" backgroundDesign="Solid" responsive="true" icon="sap-icon://account"/>
+						<Table noDataText="Drop column list items here and columns in the area above" id="__table0" items="{DataTable>/records/}">
+					    <items>
+					        <ColumnListItem counter="0" id="__item0">
+					            <cells>
+					            	
+					                <Text maxLines="0" id="__text0" text="{DataTable>Fecha}"/>
+					                <Text maxLines="0" id="__text1" text="{DataTable>FechaVto}"/>
+					                <Text maxLines="0" id="__text2" text="{DataTable>TipoC}"/>
+					                <Text text="{DataTable>Prefijo}" maxLines="0" id="__text3"/>
+					                <Text maxLines="0" id="__text4" text="{DataTable>NroComp}"/>
+					                <Text maxLines="0" id="__text6" text="{DataTable>Debe}"/>
+					                <Text maxLines="0" id="__text7" text="{DataTable>Haber}"/>
+					                <Text maxLines="0" id="__text8" text="{DataTable>SaldoComp}"/>
+					                <Text maxLines="0" id="__text9" text="{DataTable>SaldoCtaCte}"/>
+					                
+					            </cells>
+					        </ColumnListItem>
+					    </items>
+					    <columns>
+					        <Column id="__column0">
+					            <header>
+					                <Label text="{i18n>head_fecha}" id="__label5"/>
+					            </header>
+					        </Column>
+					        <Column id="__column1">
+					            <header>
+					                <Label id="__label6" text="{i18n>head_fechaVto}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column2">
+					            <header>
+					                <Label id="__label7" text="{i18n>head_tipoComp}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column3">
+					            <header>
+					                <Label id="__label8" text="{i18n>head_prefijo}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column4">
+					            <header>
+					                <Label id="__label9" text="{i18n>head_nroComp}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column6">
+					            <header>
+					                <Label id="__label11" text="{i18n>head_debe}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column7">
+					            <header>
+					                <Label text="{i18n>head_haber}" id="__label12"/>
+					            </header>
+					        </Column>
+					        <Column id="__column8">
+					            <header>
+					                <Label id="__label13" text="{i18n>head_saldoComp}"/>
+					            </header>
+					        </Column>
+					        <Column id="__column9">
+					            <header>
+					                <Label text="{i18n>head_saldoCtaCte}" id="__label14"/>
+					            </header>
+					        </Column>
+					    </columns>
+					    <infoToolbar>
+				            <OverflowToolbar width="100%" id="__toolbar1" design="Transparent">
+				                <content>
+				                    <ToolbarSpacer id="__spacer0"/>
+				                    <Button width="50px" id="__button0" icon="sap-icon://add-filter" type="Transparent" press="handleViewSettingsDialogButtonPressed"/>
+				                	<Button width="50px" id="__button1" icon="sap-icon://refresh" press="onRefresh"/>
+				                </content>
+				            </OverflowToolbar>
+				        </infoToolbar>
+					 </Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
